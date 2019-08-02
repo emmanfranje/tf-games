@@ -190,14 +190,14 @@ while not done:
         player.check_out_of_screen()
 
         # Check if the enemy cars move out of the screen.
-        #for i in range(car_count):
-        #    cars[i].draw_rect()
-        #    cars[i].y += cars[i].dy
-        #    if cars[i].y > size[1]:
-        #        score += 10
-        #        cars[i].y = random.randrange(-150, -50)
-        #        cars[i].x = random.randrange(0, 340)
-        #        cars[i].dy = random.randint(4, 9)
+        for i in range(car_count):
+            cars[i].draw_rect()
+            cars[i].y += cars[i].dy
+            if cars[i].y > size[1]:
+                score += 10
+                cars[i].y = random.randrange(-150, -50)
+                cars[i].x = random.randrange(0, 340)
+                cars[i].dy = random.randint(4, 9)
 
         # Check the collision of the player with the car
         for i in range(car_count):
