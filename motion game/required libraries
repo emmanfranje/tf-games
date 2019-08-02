@@ -1,0 +1,3 @@
+pip install python-opencv
+pip install pygame
+pip install numpy
